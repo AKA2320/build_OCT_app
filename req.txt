@@ -1,0 +1,14 @@
+pydicom
+scikit-image
+napari
+pyside6
+scipy
+torch
+ultralytics
+torchvision
+h5py
+timm
+ml-collections
+tqdm
+narsort
+pyinstaller

@@ -1,0 +1,28 @@
+pyinstaller \
+--onedir \
+--windowed \
+--name "OCT_app" \
+--add-data "models:models" \
+--add-data "config_transmorph.py:." \
+--add-data "funcs_transmorph.py:." \
+--add-data "datapaths.yaml:." \
+--hidden-import=GUI_scripts \
+--hidden-import=utils \
+--hidden-import=pydicom \
+--hidden-import=skimage \
+--hidden-import=scipy \
+--hidden-import=napari \
+--hidden-import=vispy \
+--hidden-import=torch \
+--hidden-import=PySide6 \
+--hidden-import=ultralytics \
+--hidden-import=h5py \
+--hidden-import=natsort \
+--hidden-import=torchvision \
+--hidden-import=tqdm \
+--hidden-import=timm \
+--hidden-import=ml_collections \
+--exclude-module=IPython \
+--exclude-module=ipykernel \
+--exclude-module=jupyter_client \
+pyside_gui.py 
