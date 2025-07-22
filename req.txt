@@ -10,5 +10,5 @@ h5py
 timm
 ml-collections
 tqdm
-narsort
+natsort
 pyinstaller
